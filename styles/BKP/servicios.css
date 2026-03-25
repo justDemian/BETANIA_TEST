@@ -1,0 +1,231 @@
+
+/* SERVICIOS : COMPONENTS */
+
+.services_container{
+  padding:40px 17%;
+  background:var(--background-section);
+}
+
+.services_container h1{
+  text-align:center;
+  margin-bottom:10px;
+  color:var(--text-primary);
+}
+
+.services_intro{
+  text-align:center;
+  max-width:700px;
+  margin:auto;
+  margin-bottom:40px;
+  color:var(--text-secondary);
+}
+
+.services_grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:25px;
+}
+
+/*  CAMBIOS  */
+
+.service_card{
+  height: 300px;
+  background:var(--background-card);
+  border:1px solid var(--border-light);
+  border-radius:10px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  transition:0.25s;
+}
+
+.service_card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.service_card h3{
+  color:var(--primary);
+}
+
+.service_card p{
+  color:var(--text-secondary);
+  font-size:0.95rem;
+}
+
+.service_card ul{
+  padding-left:18px;
+  font-size:0.9rem;
+  color:var(--text-secondary);
+}
+
+.badge{
+  margin-top:auto;
+  width:max-content;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:0.8rem;
+  font-weight:500;
+}
+
+.badge.agenda{
+  background:var(--warning);
+  color:var(--text-primary);
+}
+
+/* PUNTO DE GUARDADO */
+
+/* SERVICIOS : COMPONENTS */
+
+.services_container{
+  padding:40px 17%;
+  background:var(--background-section);
+}
+
+.services_container h1{
+  text-align:center;
+  margin-bottom:10px;
+  color:var(--text-primary);
+}
+
+.services_intro{
+  text-align:center;
+  max-width:700px;
+  margin:auto;
+  margin-bottom:40px;
+  color:var(--text-secondary);
+}
+
+/* GRID 4x3 */
+.services_grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:25px;
+}
+
+/* TARJETA */
+
+.service_card{
+  height:300px;
+  position:relative;
+  overflow:hidden;
+
+  border-radius:10px;
+  cursor:pointer;
+
+  transition:0.3s;
+}
+
+.service_card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* FRONT */
+
+.front_card{
+  position:relative;
+  width:100%;
+  height:100%;
+  z-index:1;
+}
+
+.front_card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+/* overlay oscuro base */
+.front_card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.3);
+}
+
+/* título sobre imagen */
+.front_card h3{
+  position:absolute;
+  bottom:15px;
+  left:15px;
+  color:white;
+  z-index:2;
+  transition:0.3s;
+}
+
+/* CONTENT (overlay) */
+
+.content_card{
+  position:absolute;
+  inset:0;
+
+  z-index:3;
+
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+
+  padding:20px;
+
+  opacity:0;
+  transform:translateY(20px);
+
+  color:white;
+
+  background:rgba(0,0,0,0.45);
+  backdrop-filter:blur(8px);
+
+  transition:all 0.4s ease;
+}
+
+/* mostrar overlay */
+.service_card:hover .content_card{
+  opacity:1;
+  transform:translateY(0);
+}
+
+/* ocultar título front en hover */
+.service_card:hover .front_card h3{
+  opacity:0;
+}
+
+/* TEXTO */
+
+.content_card h3{
+  color: var(--primary);
+}
+
+.content_card p{
+  font-size:0.95rem;
+}
+
+.content_card ul{
+  padding-left:18px;
+  font-size:0.9rem;
+}
+
+/* BADGE */
+
+.badge{
+  margin-top:auto;
+  width:max-content;
+  padding:4px 10px;
+  border-radius:20px;
+  font-size:0.8rem;
+  font-weight:500;
+}
+
+.badge.agenda{
+  background:var(--warning);
+  color:var(--text-primary);
+}
+
+.front_card img{
+  transition:transform 0.5s ease;
+}
+
+.service_card:hover .front_card img{
+  transform:scale(1.05);
+}

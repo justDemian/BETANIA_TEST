@@ -13,6 +13,7 @@
   <header>
     <div class="header_container">
       <img src="../res/image.png" alt="">
+      <button class="menu_toggle" id="menu-toggle">☰</button>
       <section class="navegation">
         <a href="index.html">Inicio</a>
         <a href="pages/convenio.html">Convenios</a>
@@ -28,7 +29,10 @@
   <!-- CONTENT -->
   <main>
     <div class="title_banner">
-      <img src="res/home/banner_3.jpeg" alt="" width="100%">
+      <picture>
+        <source srcset="res/home/banner_3m.jpeg" media="(max-width: 768px)">
+        <img src="res/home/banner_3.jpeg" alt="" width="100%">
+      </picture>
       <h1>CENTRO DE SALUD BETANIA</h1>
     </div>
 

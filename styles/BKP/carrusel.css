@@ -148,9 +148,3 @@
   animation: progress 5s linear forwards;
 }
 
-/* MOBILE VERSION */
-@media (max-width: 768px) {
-  .carrusel {
-    height: 500px;
-  }
-}

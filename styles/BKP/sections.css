@@ -1,7 +1,7 @@
 /* SECTIONS */
 main section {
   display: flex;
-  height: fit-content;
+  height: 300px;
   justify-content: space-between;
   background-color: var(--background-main);
   padding: 50px 17%;
@@ -25,11 +25,6 @@ main section.alt {
   text-align: left;
 }
 main section.double {height: 750px;}
-
-main section img {
-  border-radius: 5px;
-  height: 300px;
-}
 
 /* NEWLETTER */
 .newsletter{
@@ -106,26 +101,4 @@ main section img {
 .newsletter.alt {
   justify-self: end;
   margin-top: 20px;
-}
-
-/* MOBILE VERSION */
-@media (max-width: 768px) {
-  main section {
-    flex-direction: column;
-    height: fit-content;
-    padding: 30px 30px;
-  }
-
-  .content h1 {
-    font-size: 2rem;
-  }
-
-  main section img {
-    height: auto;
-    margin-bottom: 20px;
-  }
-
-  .newsletter {
-    margin: 20px 0;
-  }
 }
