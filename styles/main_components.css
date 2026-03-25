@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* COLORS */
+:root {
+  --primary_font :#000;
+  --secondary_font :#fff;
+
+  --primary: #3c90f7;
+
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+  --orange: #fd7e14;
+  --yellow: #ffc107;
+  --green: #71bc42;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #6c757d;
+  --gray-dark: #343a40;
+  --secondary: #8cba51;
+  --success: #71bc42;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #343a40;
+
+  --neutral: #5F6B73;
+
+  --background-main: #F7F9FA;
+  --background-section: #EEF2F4;
+  --background-card: #FFFFFF;
+
+  --success: #2E7D32;
+  --warning: #E6A700;
+  --error: #C62828;
+
+  --primary-hover: #006ce0;
+  --border-light: #E0E6EA;
+  --high-contrast: #000;
+
+  --deal: #6cd9e7;
+}
+
+* {
+  border: 0;
+  margin: 0;
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, 
+               "Segoe UI", Roboto, "Helvetica Neue", Arial, 
+               "Noto Sans", sans-serif, "Apple Color Emoji", 
+               "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  margin:0;
+  min-height:100vh;
+
+  background-color: var(--background-main);
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  z-index: 1;
+}
+
+/* HEADER COMPONENTS */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: transparent;
+  transition: all 0.4s ease;
+  backdrop-filter: blur(4px);
+
+  z-index: 1000;
+}
+
+/* AFTER-SCROLL */
+header.scrolled {
+  background-color: rgba(124,124,124,0.4);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  backdrop-filter: blur(8px);
+}
+
+header img {
+  height: 50px;
+  width: 120px;
+}
+
+header img {
+  transition: all 0.3s ease;
+  /* filter: brightness(0) invert(1); */
+}
+
+header.scrolled img {
+  filter: none;
+}
+
+.header_container {
+  display: flex;
+  width: 65vw;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 10px;
+}
+
+.navegation {
+  display: flex;
+  gap: 30px;
+}
+
+.header_container a {
+  text-decoration: none;
+  color: var(--secondary_font);
+  font-size: 1.1rem;
+  font-weight: 450;
+  transition: all 300ms ease;
+}
+
+.header_container a:hover {
+  color: var(--primary); 
+}
+
+/* BANNERS */
+.title_banner { 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  user-select: none;
+}
+.title_banner h1 {
+  position: absolute;
+  font-size: 5rem;
+  font-weight: bolder;
+  color: var(--background-card);
+}
+
+.social_buttons {
+  display: flex;
+  padding-top: 25px;
+  gap: 10px;
+  justify-content: end;
+}
+
+.social img {
+  width: 35px;
+  height: 35px;
+}
+
+/* FOOTER */
+footer {
+  padding: 40px 17%;
+  background-color: var(--primary-hover);
+  color: white;
+  display: block;
+}
+
+footer.content {
+  display: flex;
+}
+
+/* CAMBIO */
+.service_card{
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 260px;
+  cursor: pointer;
+}
+
+/* FRONT */
+.front_card{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.front_card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* título encima */
+.front_card h3{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: white;
+  z-index: 2;
+}
+
+/* oscurecer imagen */
+.front_card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background: rgba(0,0,0,0.3);
+}
+
+/* CONTENT (OCULTO) */
+.content_card{
+  position: absolute;
+  inset: 0;
+
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+
+  padding:20px;
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  color: white;
+
+  /* EFECTO VIDRIO */
+  background: rgba(0,0,0,0.4);
+  backdrop-filter: blur(6px);
+
+  transition: all 0.4s ease;
+}
+
+/* HOVER */
+.service_card:hover .content_card{
+  opacity: 1;
+  transform: translateY(0);
+}

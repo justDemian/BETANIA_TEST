@@ -1,0 +1,40 @@
+{
+  "ofertas": [
+    {
+      "titulo": "Consulta Médica General",
+      "contenido": "Evaluación completa con médico especialista.",
+      "precio_real": 30000,
+      "precio_descuento": 20000,
+      "periodo": "1 al 31 de Marzo",
+      "imagen": "res/ofertas/consulta.jpg",
+      "referencia": "https://centrodesaludbetania.cl/servicios"
+    },
+    {
+      "titulo": "Perfil Lipídico",
+      "contenido": "Examen completo de colesterol y triglicéridos.",
+      "precio_real": 25000,
+      "precio_descuento": 15000,
+      "periodo": "10 al 30 de Marzo",
+      "imagen": "res/ofertas/examen.jpg",
+      "referencia": "https://centrodesaludbetania.cl/servicios"
+    },
+    {
+      "titulo":"Lavado de Oídos",
+      "contenido":"Lavado completo de Oídos, que no te lo cuenten.",
+      "precio_real":20000,
+      "precio_descuento":10000,
+      "periodo":"15 de febrero a 15 de Marzo",
+      "imagen": "res/ofertas/lavado.jpg",
+      "referencia": "https://centrodesaludbetania.cl/servicios"
+    },
+    {
+      "titulo":"EXAMPLE",
+      "contenido":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, maiores.",
+      "precio_real":100,
+      "precio_descuento":99,
+      "periodo":"FOREVER",
+      "imagen": "res/ofertas/stock_exam.jpg",
+      "referencia": "https://google.com/"
+    }
+  ]
+}
