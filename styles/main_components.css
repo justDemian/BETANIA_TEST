@@ -10,6 +10,7 @@
   /* BASE COLORS */
   --primary: #3c90f7;
   --primary-hover: #006ce0;
+  --primary-hover-alpha: #006ce0dd;
 
   --secondary: #8cba51;
 
@@ -197,7 +198,7 @@ footer.content {
   }
 
   .navegation {
-    position: absolute;
+    position: fixed;
     top: 70px;
     left: 0;
     width: 100%;
@@ -209,9 +210,9 @@ footer.content {
     max-height: 0;
     overflow: hidden;
     background-color: rgba(124,124,124,0.4);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(10px);
 
-    transition: max-height 0.3s ease;
+    transition: max-height 0.5s ease;
   }
 
   .navegation a {
@@ -221,36 +222,10 @@ footer.content {
   .navegation.active {
     max-height: 600px;
   }
-}
 
-/* DESKTOP MENU HIDDING */
-@media (min-width: 768px) {
-  .menu_toggle {
-    display: none;
-  }
-  .navegation {
-    position: static;
-    max-height: none;
-    overflow: visible;
-
-    flex-direction: row;
-    background: none;
-    padding: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  header {
+  header:has(.navegation.navegation.active){
     backdrop-filter: none;
-  }
-
-  .navegation {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    width: 100%;
-
-    background-color: rgba(124,124,124,0.2);
-    backdrop-filter: blur(8px);
+    background: var(--primary-hover-alpha);
+    transition: background 0.4s ease;
   }
 }

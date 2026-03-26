@@ -108,6 +108,6 @@
 /* MOBILE VERSION */
 @media (max-width: 768px) {
   .convenios_container {
-    padding: 30px;
+    padding: 30px 20px;
   }
 }

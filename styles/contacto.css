@@ -117,3 +117,12 @@
   width: 35px;
   height: 35px;
 }
+
+/* MOBILE VERSION */
+@media (max-width: 768px){
+  /* CONTACT SECTION */
+  .contact_container{
+    padding:40px 20px;
+    background:var(--background-section);
+  }
+}

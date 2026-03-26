@@ -22,8 +22,8 @@ color:var(--text-secondary);
 /* FUNDADORA */
 
 .founder_section{
-padding:40px 10%;
-background:var(--background-main);
+  padding:40px 10%;
+  background:var(--background-main);
 }
 
 .founder_card{
@@ -155,3 +155,9 @@ padding:12px 20px;
 border-radius:8px;
 }
 
+/* MOBILE VERSION */
+@media (max-width: 768px){
+  .founder_card{
+    flex-direction: column;
+  }
+}
