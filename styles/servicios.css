@@ -229,3 +229,15 @@
 .service_card:hover .front_card img{
   transform:scale(1.05);
 }
+
+/* MOBILE VERSION */
+@media (max-width: 768px){
+  .services_container {
+    padding: 30px;
+  }
+
+  .services_grid{
+    display: flex;
+    flex-direction: column;
+  }
+}

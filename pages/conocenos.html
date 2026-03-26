@@ -12,7 +12,8 @@
   <header>
     <div class="header_container">
       <img src="../res/image.png" alt="">
-      <section class="navegation">
+      <button class="menu_toggle" id="menu-toggle">☰</button>
+      <section class="navegation" id="nav">
         <a href="../index.html">Inicio</a>
         <a href="../pages/convenio.html">Convenios</a>
         <a href="../pages/servicios.html">Servicios</a>
@@ -27,7 +28,10 @@
   <!-- CONTENT -->
   <main>
     <div class="title_banner">
-      <img src="../res/home/banner_3.jpeg" alt="" width="100%">
+      <picture>
+        <source srcset="/res/home/banner_3m.jpeg" media="(max-width: 768px)">
+        <img src="../res/home/banner_3.jpeg" alt="" width="100%">
+      </picture>
       <h1>NUESTRO EQUIPO</h1>
     </div>
 
@@ -189,4 +193,5 @@
   </footer>
 </body>
 <script src="../scripts/header.js"></script>
+<script src="/scripts/navmenu.js"></script>
 </html>

@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* VARIABLES */
@@ -180,25 +181,76 @@ footer.content {
     padding: 0 15px;
   }
   
-  .menu-toggle {
-    display:block;
+  .title_banner h1 {
+    font-size: 2rem;
+    text-align: center;
   }
+
+  /*  NAV MENU */
   
+  .menu_toggle {
+    display: block;
+    font-size: 2rem;
+    background: none;
+    color: white;
+    cursor: pointer;
+  }
+
   .navegation {
-    display: none;
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
 
+    display: flex;
     flex-direction: column;
-    background: rgba(0,0,0,0.9);
+    gap: 0;
 
-    padding: 20px;
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgba(124,124,124,0.4);
+    backdrop-filter: blur(8px);
+
+    transition: max-height 0.3s ease;
   }
 
-  .title_banner h1 {
-    font-size: 2rem;
-    text-align: center;
+  .navegation a {
+    padding: 15px 10px;
+  }
+
+  .navegation.active {
+    max-height: 600px;
+  }
+}
+
+/* DESKTOP MENU HIDDING */
+@media (min-width: 768px) {
+  .menu_toggle {
+    display: none;
+  }
+  .navegation {
+    position: static;
+    max-height: none;
+    overflow: visible;
+
+    flex-direction: row;
+    background: none;
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    backdrop-filter: none;
+  }
+
+  .navegation {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+
+    background-color: rgba(124,124,124,0.2);
+    backdrop-filter: blur(8px);
   }
 }

@@ -104,3 +104,10 @@
     transform: translateX(-50%);
   }
 }
+
+/* MOBILE VERSION */
+@media (max-width: 768px) {
+  .convenios_container {
+    padding: 30px;
+  }
+}
