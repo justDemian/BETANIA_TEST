@@ -37,10 +37,6 @@ function crearSlides(){
         </div>
 
         <p class="periodo">${oferta.periodo}</p>
-
-        <a class="boton" href="${oferta.referencia}">
-          Aprovechar esta Promoción
-        </a>
       </div>
     `;
 

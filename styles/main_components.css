@@ -8,8 +8,8 @@
   --secondary_font: #fff;
 
   /* BASE COLORS */
-  --primary: #e14b4b;
-  --primary-hover: #c62828;
+  --primary: #c62828;
+  --primary-hover: #662022;
   --primary-hover-alpha: #c62828dd;
 
   --secondary: #8cba51;
@@ -77,7 +77,7 @@ header {
   display: flex;
   justify-content: center;
 
-  background-color: rgba(124,124,124,0.2);
+  background-color: rgba(200,200,200,0.4);
   backdrop-filter: blur(4px);
 
   transition: all 0.4s ease;
@@ -86,7 +86,7 @@ header {
 
 /* scroll status */
 header.scrolled {
-  background-color: rgba(124,124,124,0.6);
+  background-color: rgba(200, 200 ,200,0.8);
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   backdrop-filter: blur(8px);
 }
@@ -113,6 +113,10 @@ header.scrolled img {
   filter: none;
 }
 
+header a {
+  padding: 10px;
+}
+
 /* navegación */
 .navegation {
   display: flex;
@@ -130,6 +134,15 @@ header.scrolled img {
 
 .header_container a:hover {
   color: var(--primary);
+}
+
+.exam {
+  border-radius: 5px;
+  background-color: var(--primary);
+}
+
+.header_container .exam:hover{
+  color: var(--background-main);
 }
 
 .menu_toggle { display: none; }
