@@ -128,13 +128,15 @@
   width:100%;
   height:100%;
   z-index:1;
+  background-color: var(--primary);
 }
 
 .front_card img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+  width:54%;
+  height:54%;
+  margin: 23%;
   display:block;
+  filter: invert(100%);
 }
 
 /* overlay oscuro base */
