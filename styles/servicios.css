@@ -230,44 +230,19 @@
   transform:scale(1.05);
 }
 
-/* MOBILE VERSION */
-@media (max-width: 768px){
-  .services_container {
-    padding: 30px;
-  }
 
-  .services_grid{
-    display: flex;
-    flex-direction: column;
-  }
-}
 
-  /* SECTIONS */
+/* SECTIONS */
 main .eneterprice {
   display: flex;
   height: fit-content;
   justify-content: space-between;
-  background-color: var(--background-main);
+  background-color: var(--background-section);
   padding: 50px 17%;
   color: var(--gray);
   text-align: right;
 }
 
-main .eneterprice p {
-  display: flex;
-  flex-direction: column;
-  font-size: larger;
-}
-
-main .eneterprice h1 { 
-  font-size: 3rem;
-  color: var(--primary);
-}
-
-main .eneterprice .alt {
-  background-color: var(--background-section);
-  text-align: left;
-}
 main .eneterprice .double {height: 750px;}
 
 main .eneterprice img {
@@ -352,9 +327,63 @@ main .eneterprice img {
   margin-top: 20px;
 }
 
+.examen_list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 15vw;
+  width: 70vw;
+  gap: 20px;
+}
+
+.examen_list a {
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bolder;
+  background-color: var(--primary);
+  color: var(--secondary_font);
+}
+
+.examen_list .exam_grid {
+  display: grid;
+  width: 90%;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+}
+
+.exam_type{
+  padding: 15px 15px 20px;
+  border: solid 1px var(--primary);
+  background-color: var(--background-main);
+  border-radius: 10px;
+}
+
+.exam_type h2 { color: var(--primary);}
+
+.exam_type ul { 
+  padding: 0 25px;
+}
+
+.exam_type li {
+  list-style:square;
+  white-space: none;
+}
+
+
 /* MOBILE VERSION */
 @media (max-width: 768px) {
-  main section {
+
+  .services_container {
+    padding: 30px;
+  }
+
+  .services_grid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  main .eneterprice {
     flex-direction: column;
     height: fit-content;
     padding: 30px 30px;
@@ -364,12 +393,26 @@ main .eneterprice img {
     font-size: 2rem;
   }
 
-  main section img {
+  main .eneterprice img {
     height: auto;
     margin-bottom: 20px;
   }
 
   .newsletter {
     margin: 20px 0;
+  }
+
+  .examen_list {
+    margin: 40px 8vw;
+    width: 84vw;
+    gap: 20px;
+  }
+
+  .examen_list .exam_grid {
+    display: grid;
+    width: 100%;
+    gap: 30px;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: space-between;
   }
 }

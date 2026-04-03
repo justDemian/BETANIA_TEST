@@ -29,6 +29,7 @@
   --background-main: #F7F9FA;
   --background-section: #EEF2F4;
   --background-card: #FFFFFF;
+  --background-dark: #888;
 
   /* UI */
   --border-light: #E0E6EA;
@@ -137,8 +138,9 @@ header a {
 }
 
 .exam {
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: var(--primary);
+  padding: 8px 20px 9px;
 }
 
 .header_container .exam:hover{
