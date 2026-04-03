@@ -187,15 +187,39 @@ header a {
 
 /* FOOTER */
 footer {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 40px 17%;
-
   background-color: var(--primary-hover);
   color: var(--white);
 }
 
-footer.content {
+footer .content {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+}
+
+footer .extra {
+  margin-top: 40px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .extra a {
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: var(--secondary_font);
+  background-color: var(--primary);
+  font-weight: bolder;
+}
+
+footer .end {
+  font-style: italic;
+  text-align: end;
 }
 
 /* MOBILE VERSION */
