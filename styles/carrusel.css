@@ -1,6 +1,6 @@
 /* CONTENEDOR */
 .carrusel{
-  height: 300px;
+  height: 600px;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -49,7 +49,7 @@
   display: flex;
   position: relative;
   justify-content: space-around;
-  background-color: var(--primary-hover);
+  background-color: var(--fourthary);
   color: transparent;
   user-select: none;
 }
@@ -146,6 +146,29 @@
 
 .dot.active .dot-progress{
   animation: progress 5s linear forwards;
+}
+
+.promo_container {
+  background-color: var(--background-section);
+  padding: 50px 17%;
+}
+
+.promo_container .content {
+  margin-bottom: 30px;
+}
+
+.promo_container h1{ 
+  font-size: 3rem;
+  color: var(--primary);
+}
+.promo_container p {
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+}
+
+.two_col {
+  display: flex;
 }
 
 /* MOBILE VERSION */

@@ -1,19 +1,29 @@
 {
   "ofertas": [
     {
-      "titulo": "Promoción de Invierno",
-      "contenido": "Ven a pincharte antes de que el invierno llegue, aprovecha nuestras ofertas de inyecciones.",
+      "titulo": "Todos tenemos Super Salud este Año",
+      "contenido": "Encuentra descuentos para los examenes de sangre para hombres, no dejes que nada te frene este año. ()",
       "precio_real": 30000,
       "precio_descuento": 20000,
-      "periodo": "De Abril hasta Agosto",
+      "periodo": "01.01 - 31.12",
       "imagen": "res/ofertas/consulta.jpg"
     },
+
     {
       "titulo": "Promoción de Verano",
       "contenido": "No dejes que las vacaciones te detengan, haste un chequeo completo y ahorra para ese viaje.",
       "precio_real": 25000,
       "precio_descuento": 15000,
       "periodo": "No disponible",
+      "imagen": "res/ofertas/examen.jpg"
+    },
+
+    {
+      "titulo": "Mes del Corazón",
+      "contenido": "En este mes del corazón chequéate para que todo esté en orden con tu corazón.",
+      "precio_real": 25000,
+      "precio_descuento": 15000,
+      "periodo": "01.08 - 30.08",
       "imagen": "res/ofertas/examen.jpg"
     }
   ]

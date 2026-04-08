@@ -8,11 +8,13 @@
   --secondary_font: #fff;
 
   /* BASE COLORS */
-  --primary: #c62828;
-  --primary-hover: #662022;
-  --primary-hover-alpha: #c62828dd;
+  --primary: #650304;
+  --primary-hover: #d71515;
+  --primary-hover-alpha: #650304dd;
 
-  --secondary: #8cba51;
+  --secondary: #1a0a0e;
+  --thirdary: #33080b;
+  --fourthary: #4c0507;
 
   /* STATUS */
   --success: #2E7D32;
@@ -161,12 +163,12 @@ header a {
 
 .title_banner h1 {
   position: absolute;
-  font-size: 5rem;
+  font-size: 4.5rem;
   text-align: center;
   font-weight: bolder;
   color: var(--background-card);
-  background-color: rgba(124,124,124,0.4);
-  backdrop-filter: blur(10px);
+  background-color: rgba(124,124,124,0.8);
+  backdrop-filter: blur(8px);
   padding: 10px 30px;
   border-radius: 30px;
 }
@@ -190,7 +192,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 40px 17%;
-  background-color: var(--primary-hover);
+  background-color: var(--fourthary);
   color: var(--white);
 }
 
