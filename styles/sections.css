@@ -125,6 +125,13 @@ main section img {
     margin-bottom: 20px;
   }
 
+  .logo_santa {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 50px;
+    align-self: center;
+  }
+
   .newsletter {
     margin: 20px 0;
   }

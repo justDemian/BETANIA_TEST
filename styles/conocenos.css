@@ -23,7 +23,6 @@ color:var(--text-secondary);
 
 
 /* FUNDADORA */
-
 .founder_section{
   padding:40px 10%;
   background:var(--background-main);
@@ -112,6 +111,11 @@ object-fit:cover;
 border-radius:8px;
 }
 
+.badge_title {
+  margin: 0;
+  padding: 0;
+}
+
 .badges{
 display:flex;
 flex-wrap:wrap;
@@ -162,5 +166,14 @@ border-radius:8px;
 @media (max-width: 768px){
   .founder_card{
     flex-direction: column;
+  }
+
+  .about_container{ padding:40px 8%; }
+  .founder_section{ padding:40px 8%; }
+  .mission_section{ padding:40px 8%; }
+
+  h2.badge_title {
+    margin-bottom: 0;
+    padding: 0;
   }
 }

@@ -234,10 +234,16 @@ footer .end {
   }
   
   .title_banner h1 {
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.5rem;
+    text-align: end;
     padding: auto;
     margin: 10px 10px;
+    align-self: flex-end;
+    
+    color: var(--background-card);
+    background-color: rgba(124,124,124,0.4);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
   }
 
   /*  NAV MENU */
@@ -279,5 +285,24 @@ footer .end {
     backdrop-filter: none;
     background: var(--primary-hover-alpha);
     transition: background 0.4s ease;
+  }
+
+  footer {
+    padding: 40px;
+  }
+
+  footer .content{
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .content h1 {
+    font-size: 1.5rem;
+  }
+
+  footer .extra{
+    font-size: 0.9rem;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 }
