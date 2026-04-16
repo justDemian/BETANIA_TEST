@@ -50,6 +50,29 @@
           <h2>Envíenos un mensaje</h2>
 
           <form class="contact_form"
+                action="https://formspree.io/f/xgorakyq"
+                method="POST">
+
+            <label>Nombre</label>
+            <input type="text" name="nombre" required>
+
+            <label>Correo electrónico</label>
+            <input type="email" name="email" required>
+
+            <label>Número telefónico</label>
+            <input type="tel" name="telefono">
+
+            <label>Mensaje</label>
+            <textarea name="mensaje" rows="5" required></textarea>
+
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde Centro de Salud Betania">
+            <input type="hidden" name="_captcha" value="false">
+
+            <button type="submit">Enviar mensaje</button>
+          </form>
+
+          <!--
+          <form class="contact_form"
           action="mailto:contacto@centrodesaludbetania.cl"
           method="POST"
           enctype="text/plain">
@@ -73,7 +96,7 @@
               </label>
             </div>
             <button type="submit">Enviar mensaje</button>
-          </form>
+          </form>-->
         </article>
 
         <!-- MAPA -->
