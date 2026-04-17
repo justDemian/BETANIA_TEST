@@ -1,31 +1,64 @@
 {
   "ofertas": [
     {
-      "titulo": "Todos tenemos Super Salud este Año",
-      "contenido": "Encuentra descuentos para los examenes de sangre para hombres, no dejes que nada te frene este año. ()",
-      "precio_real": 30000,
-      "precio_descuento": 20000,
-      "periodo": "yearly",
-      "imagen": "res/ofertas/consulta.jpg",
-      "wsp":"https://google.com"
+      "titulo": "Controla tu Resistencia a la Insulina",
+      "contenido": "Examen HOMA para evaluar tu resistencia a la insulina y prevenir complicaciones metabólicas.",
+      "precio_real": 12000,
+      "precio_descuento": 10200,
+      "periodo": "01.04 - 31.07",
+      "imagen": "res/ofertas/insulina.jpg",
+      "wsp": "https://wa.me/56961315370?text=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20Resistencia%20a%20la%20Insulina.",
+      "mail": "mailto:contacto@centrodesaludbetania.cl?subject=Consulta%20Promoción%20HOMA&body=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20Resistencia%20a%20la%20Insulina."
     },
-
     {
-      "titulo": "Promoción de Verano",
-      "contenido": "No dejes que las vacaciones te detengan, haste un chequeo completo y ahorra para ese viaje.",
-      "precio_real": 25000,
-      "precio_descuento": 15000,
-      "periodo": "01.04 - 31.04",
-      "imagen": "res/ofertas/examen.jpg"
+      "titulo": "Previene Cáncer de Próstata",
+      "contenido": "Examen PSA (Antígeno Prostático) para detección temprana y prevención.",
+      "precio_real": 14000,
+      "precio_descuento": 11900,
+      "periodo": "01.04 - 31.07",
+      "imagen": "res/ofertas/psa.jpg",
+      "wsp": "https://wa.me/56961315370?text=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20PSA.",
+      "mail": "mailto:contacto@centrodesaludbetania.cl?subject=Consulta%20Promoción%20PSA&body=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20PSA."
     },
-
     {
-      "titulo": "Mes del Corazón",
-      "contenido": "En este mes del corazón chequéate para que todo esté en orden con tu corazón.",
-      "precio_real": 25000,
-      "precio_descuento": 15000,
-      "periodo": "01.08 - 30.08",
-      "imagen": "res/ofertas/examen.jpg"
+      "titulo": "Cuida tu Tiroides",
+      "contenido": "Examen TSH para evaluar el correcto funcionamiento de la glándula tiroides.",
+      "precio_real": 8000,
+      "precio_descuento": 6800,
+      "periodo": "01.04 - 31.07",
+      "imagen": "res/ofertas/tsh.jpg",
+      "wsp": "https://wa.me/56961315370?text=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20TSH.",
+      "mail": "mailto:contacto@centrodesaludbetania.cl?subject=Consulta%20Promoción%20TSH&body=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20TSH."
+    },
+    {
+      "titulo": "Cuida tu Corazón y Colesterol",
+      "contenido": "Examen de colesterol total para prevenir infartos y enfermedades cardiovasculares.",
+      "precio_real": 4000,
+      "precio_descuento": 3400,
+      "periodo": "01.04 - 31.07",
+      "imagen": "res/ofertas/corazon.jpg",
+      "wsp": "https://wa.me/56961315370?text=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20Colesterol.",
+      "mail": "mailto:contacto@centrodesaludbetania.cl?subject=Consulta%20Promoción%20Colesterol&body=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20Colesterol."
+    },
+    {
+      "titulo": "Controla tu Diabetes",
+      "contenido": "Hemoglobina glicosilada para monitorear tu nivel de azúcar en sangre.",
+      "precio_real": 3000,
+      "precio_descuento": 2550,
+      "periodo": "01.04 - 31.07",
+      "imagen": "res/ofertas/hemoglobina.jpg",
+      "wsp": "https://wa.me/56961315370?text=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20Hemoglobina%20Glicosilada.",
+      "mail": "mailto:contacto@centrodesaludbetania.cl?subject=Consulta%20Promoción%20Hemoglobina&body=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20Hemoglobina%20Glicosilada."
+    },
+    {
+      "titulo": "Previene Diabetes Mellitus",
+      "contenido": "Examen de glucemia para detectar niveles elevados de azúcar en sangre.",
+      "precio_real": 3000,
+      "precio_descuento": 2550,
+      "periodo": "01.04 - 31.07",
+      "imagen": "res/ofertas/glucemia.jpg",
+      "wsp": "https://wa.me/56961315370?text=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20Glucemia.",
+      "mail": "mailto:contacto@centrodesaludbetania.cl?subject=Consulta%20Promoción%20Glucemia&body=Buenas,%20quiero%20consultar%20por%20la%20promoción%20de%20Glucemia."
     }
   ]
 }

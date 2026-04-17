@@ -51,7 +51,7 @@ function crearSlides(){
 
           <div class="slide-buttons">
             <a href="${oferta.wsp}" class="oferta_button wsp">Aprovecha esta Promoción <img src="/res/whatsapp.png" alt="" width="50px"></a>
-            <a href="${oferta.mail}" class="oferta_button mail">Envainos un correo<img src="/res/mail.png" alt="" width="50px"></a>
+            <a href="${oferta.mail}" class="oferta_button mail">Envíanos un correo<img src="/res/mail.png" alt="" width="50px"></a>
           </div>
         </div>
       </div>
@@ -110,7 +110,7 @@ function siguiente(){
 }
 
 function iniciarAuto(){
-  intervalo=setInterval(siguiente,5000);
+  intervalo=setInterval(siguiente,10000);
 }
 
 function reiniciarAuto(){
